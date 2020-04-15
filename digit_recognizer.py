@@ -35,8 +35,6 @@ class digit_recognizer:
 
         for testfile in glob("{0}/*.wav".format(self.test_directory)):
             # Read the input file
-            print("\n")
-            print(testfile)
             sampling_freq, audio = wavfile.read(testfile)
             test_features = mfcc(audio, sampling_freq, nfft = self.nfft)
             max_score = None
@@ -58,8 +56,6 @@ class digit_recognizer:
         for filename in glob("{0}/**/*.wav".format(self.digit_directory)):
 
             # Read the input file
-            print("\n")
-            print(filename)
             sampling_freq, audio = wavfile.read(filename)
             label = self.get_training_label(filename)
             # Extract MFCC features and append to list
