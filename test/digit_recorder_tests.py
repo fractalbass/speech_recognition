@@ -8,7 +8,7 @@ class TestDigitRecognizer(unittest.TestCase):
 
     def test_process_directory(self):
         dr = digit_recognizer()
-        features = dr.process_directory()
+        features = dr.process_training_directory()
         #self.assertEqual(len(features), 10)
 
     def test_get_filename(self):
