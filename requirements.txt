@@ -3,7 +3,7 @@ chardet==3.0.4
 colorama==0.4.1
 future==0.18.2
 hmmlearn==0.2.3
-joblib==0.14.1
+joblib==1.2.0
 numpy==1.18.1
 python-speech-features==0.6
 scikit-learn==0.22.2.post1
